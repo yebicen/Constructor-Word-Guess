@@ -6,11 +6,11 @@ function Letter(singleLetter, guessed) {
     this.singleLetter = singleLetter;
 
   // A boolean value that stores whether that letter has been guessed yet
-    this.guessed = guessed;
+    this.guessed = false;
     
   // A function that returns the underlying character if the letter has been guessed, or a placeholder (like an underscore) if the letter has not been guessed
     this.replaceletter = function() {
-      if (this.singleLetter === userinput) {
+      if (this.guessed) {
           this.singleLetter === singleLetter; 
         // console.log(this.singleLetter);
       }
